@@ -1,0 +1,85 @@
+api
+api=http://localhost:3000/user/signup" =Signup = post data={}
+api=http://localhost:3000/ = login =post
+api=http://localhost:3000/admin =Admin login=post
+api=http://localhost:3000/instructor/signup= instructor signup =post
+api=http://localhost:3000/instructor/login=login instructor =post
+api=http://localhost:3000/add/date = to add dates multiple for instructor =post 
+api=http://localhost:3000/book/all/male/day = get all instructor on date = post 
+api=http://localhost:3000/book/add = book appointment = post
+api=http://localhost:3000/book/booking = clients appointments for instructor = post
+api=http://localhost:3000/book/user/:id = get user information for instructor = get
+api=http://localhost:3000/book/update/status/:id= update status of clients after session = post
+api=http://localhost:3000/book/users/status = get status of user = get
+api=http://localhost:3000/book/cancel/:name/:_id = cancel = post
+api=http://localhost:3000/send/_id=send doucments to user =post
+api=http://localhost:3000/download/= to see doucments of instructor = get
+api=http://localhost:3000/users/images/idenitiy/:_id = get idenitiy of user=get
+api=http://localhost:3000/users/images/otherproof/:_id = get otherproof of user=get
+api=http://localhost:3000/users/images/profileImage/:_id = get profileImage of user=get
+api=http://localhost:3000/users/images/signature/:_id = get signature of user=get
+api=http://localhost:3000/instructor/images/profileImage/:id = get profileImage of instructor=get
+api=http://localhost:3000/logout = to logout user and instructor = get
+
+
+steps
+
+add collection in postman
+collection = https://www.getpostman.com/collections/162b13840da98767a708
+
+instructor signup  
+api=http://localhost:3000/instructor/signup= instructor signup =post
+
+instructor login   
+api=http://localhost:3000/instructor/login=login instructor =post
+
+instructor add dates  
+api=http://localhost:3000/add/date = to add dates multiple for instructor =post  
+
+user signup  
+api=http://localhost:3000/user/signup" =Signup = post data={}      
+
+user login 
+api=http://localhost:3000/ = login =post
+
+show instructor to user  
+api=http://localhost:3000/book/all/male/day = get all instructor on date = post 
+
+book instructor from user  
+api=http://localhost:3000/book/add = book appointment = post
+
+show booked users to instructor 
+api=http://localhost:3000/book/booking = clients appointments for instructor = post
+
+show user data  
+api=http://localhost:3000/book/user/:id = get user information for instructor = get 
+
+updated status of user from instructor after traning 
+api=http://localhost:3000/book/update/status/:id= update status of clients after session = post
+
+show status to user 
+api=http://localhost:3000/book/users/status = get status of user = get
+
+user cancel appointment 
+api=http://localhost:3000/book/cancel/:name/:_id = cancel = post
+
+send doucments to user 
+api=http://localhost:3000/send/_id=send doucments to user =post
+
+download doucments for user 
+api=http://localhost:3000/download/= to see doucments of instructor = get
+
+download user images 
+api=http://localhost:3000/users/images/idenitiy/:_id = get idenitiy of user=get
+
+download instructor profile images 
+api=http://localhost:3000/instructor/images/profileImage/:id = get profileImage of instructor=get
+
+upload doucments 
+api=http://localhost:3000/upload/documents =upload other documents= post
+
+logout 
+api=http://localhost:3000/logout = to logout user and instructor = get
+
+to get all documents in one api 
+use api =http://localhost:3000/users/images/:document/:_id 
